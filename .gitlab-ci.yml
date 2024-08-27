@@ -2,7 +2,7 @@
 image: nixos/nix
 # Functions that should be executed before the build script is run
 before_script:
-  - cat > /path/to/newFile.text<< EOF
+  - cat > /etc/nix/nix.conf << EOF
     trusted-public-keys = cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
     substituters = https://cache.garnix.io?priority=41 https://cache.nixos.org/
     experimental-features = nix-command
