@@ -8,7 +8,9 @@ before_script:
 
 pages:
   script:
-    - nix build -o ./public
+    - pwd
+    - nix build -o ./public --accept-flake-config
+    - ls ./public
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
