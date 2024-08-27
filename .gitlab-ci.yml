@@ -4,7 +4,7 @@ image: nixos/nix
 before_script:
   - echo "trusted-public-keys = cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=" >> /etc/nix/nix.conf
   - echo "substituters = https://cache.garnix.io?priority=41 https://cache.nixos.org/" >> /etc/nix/nix.conf
-  - echo "experimental-features = nix-command" >> /etc/nix/nix.conf
+  - echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
 
 pages:
   script:
