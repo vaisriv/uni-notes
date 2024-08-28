@@ -5,7 +5,8 @@ pages:
     - nix build -o ./output --extra-experimental-features nix-command --extra-experimental-features flakes --accept-flake-config
     - ls ./output
     - mkdir ./public
-    - cp ./output/* ./public/
+    - cp -r ./output/* ./public/
+    - ls ./public
   artifacts:
     paths:
       - ./public
