@@ -22,7 +22,7 @@
           sites."default" = {
             layers = [{ path = ./.; pathString = "."; }];
             # port = 8080;
-            baseUrl = "code.umd.edu/vsriv81/uni-24f";
+            baseUrl = "/";
             # prettyUrls = true;
           };
         };
