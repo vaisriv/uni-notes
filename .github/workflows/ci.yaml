@@ -33,6 +33,6 @@ jobs:
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: baefa62f242180429d549bebf70158fa
-          projectName: Uni Notes
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: uni-notes
           directory: ./_site
