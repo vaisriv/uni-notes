@@ -2,7 +2,7 @@
 # https://github.com/srid/emanote/blob/master/emanote/default/index.yaml
 
 page:
-  siteTitle: Uni Notes - 2024 Fall
+  siteTitle: Uni Notes
 
 template:
   theme: cyan
