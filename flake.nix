@@ -17,7 +17,7 @@
       imports = [ inputs.emanote.flakeModule ];
       perSystem = { self', pkgs, system, ... }: {
         emanote = {
-          sites."uni-notes" = {
+          sites."default" = {
             layers = [{ path = ./.; pathString = "."; }];
             prettyUrls = true;
           };
