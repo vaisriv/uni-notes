@@ -7,7 +7,7 @@ page:
 template:
   theme: cyan
   baseUrl: "/"
-  iconUrl: "./static/favicon.svg"
+  iconUrl: "./_images/favicon.svg"
   sidebar:
     folders-first: true
 
