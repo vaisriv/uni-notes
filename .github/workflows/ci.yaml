@@ -5,6 +5,11 @@ on:
     branches:
       - "main"
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
@@ -21,6 +26,13 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
+
+      - name: install nix
+        uses: DeterminateSystems/nix-installer-action@main
+        with:
+          extra-conf: |
+            trusted-public-keys = cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
+            substituters = https://cache.garnix.io?priority=41 https://cache.nixos.org/
 
       - name: build
         run: |
