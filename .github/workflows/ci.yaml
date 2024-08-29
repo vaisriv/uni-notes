@@ -27,7 +27,7 @@ jobs:
 
       - name: build
         run: |
-          nix build -o ./_site
+          nix build -o ./_site --accept-flake-config
 
       - name: cloudflare action
         uses: cloudflare/pages-action@v1
