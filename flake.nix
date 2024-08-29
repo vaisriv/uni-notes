@@ -17,13 +17,9 @@
       imports = [ inputs.emanote.flakeModule ];
       perSystem = { self', pkgs, system, ... }: {
         emanote = {
-          # By default, the 'emanote' flake input is used.
-          # package = inputs.emanote.packages.${system}.default;
-          sites."default" = {
+          sites."uni-notes" = {
             layers = [{ path = ./.; pathString = "."; }];
-            # port = 8080;
-            baseUrl = "/";
-            # prettyUrls = true;
+            prettyUrls = true;
           };
         };
         devShells.default = pkgs.mkShell {

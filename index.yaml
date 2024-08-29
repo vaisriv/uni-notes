@@ -1,8 +1,6 @@
-# For documentation and available settings, see
-# https://github.com/srid/emanote/blob/master/emanote/default/index.yaml
-
 page:
   siteTitle: Uni Notes
+  siteUrl: https://uni.vaisriv.com
 
 template:
   theme: cyan
