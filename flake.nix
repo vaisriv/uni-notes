@@ -1,48 +1,49 @@
 {
-  nixConfig = {
-    extra-substituters = "https://cache.garnix.io";
-    extra-trusted-public-keys = "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g=";
-  };
+	nixConfig = {
+		extra-substituters = "https://cache.garnix.io";
+		extra-trusted-public-keys = "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g=";
+	};
 
-  inputs = {
-    emanote.url = "github:srid/emanote";
-    emanote.inputs.emanote-template.follows = "";
-    nixpkgs.follows = "emanote/nixpkgs";
-    flake-parts.follows = "emanote/flake-parts";
-  };
+	inputs = {
+		emanote.url = "github:srid/emanote";
+		emanote.inputs.emanote-template.follows = "";
+		nixpkgs.follows = "emanote/nixpkgs";
+		flake-parts.follows = "emanote/flake-parts";
+	};
 
-  outputs = inputs @ {
-    self,
-    flake-parts,
-    nixpkgs,
-    ...
-  }:
-    flake-parts.lib.mkFlake {inherit inputs;} {
-      systems = nixpkgs.lib.systems.flakeExposed;
-      imports = [inputs.emanote.flakeModule];
-      perSystem = {
-        self',
-        pkgs,
-        system,
-        ...
-      }: {
-        emanote = {
-          sites."default" = {
-            layers = [
-              {
-                path = ./.;
-                pathString = ".";
-              }
-            ];
-            prettyUrls = true;
-          };
-        };
-        devShells.default = pkgs.mkShell {
-          buildInputs = [
-            pkgs.nixpkgs-fmt
-          ];
-        };
-        formatter = pkgs.nixpkgs-fmt;
-      };
-    };
+	outputs = inputs @ {
+		self,
+		flake-parts,
+		nixpkgs,
+		...
+	}:
+		flake-parts.lib.mkFlake {inherit inputs;} {
+			systems = nixpkgs.lib.systems.flakeExposed;
+			imports = [inputs.emanote.flakeModule];
+			perSystem = {
+				self',
+				pkgs,
+				system,
+				...
+			}: {
+				emanote = {
+					sites."default" = {
+						layers = [
+							{
+								path = ./.;
+								pathString = ".";
+							}
+						];
+						prettyUrls = true;
+					};
+				};
+				devShells.default =
+					pkgs.mkShell {
+						buildInputs = [
+							pkgs.nixpkgs-fmt
+						];
+					};
+				formatter = pkgs.nixpkgs-fmt;
+			};
+		};
 }
