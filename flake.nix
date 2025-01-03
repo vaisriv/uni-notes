@@ -11,14 +11,29 @@
     flake-parts.follows = "emanote/flake-parts";
   };
 
-  outputs = inputs@{ self, flake-parts, nixpkgs, ... }:
-    flake-parts.lib.mkFlake { inherit inputs; } {
+  outputs = inputs @ {
+    self,
+    flake-parts,
+    nixpkgs,
+    ...
+  }:
+    flake-parts.lib.mkFlake {inherit inputs;} {
       systems = nixpkgs.lib.systems.flakeExposed;
-      imports = [ inputs.emanote.flakeModule ];
-      perSystem = { self', pkgs, system, ... }: {
+      imports = [inputs.emanote.flakeModule];
+      perSystem = {
+        self',
+        pkgs,
+        system,
+        ...
+      }: {
         emanote = {
           sites."default" = {
-            layers = [{ path = ./.; pathString = "."; }];
+            layers = [
+              {
+                path = ./.;
+                pathString = ".";
+              }
+            ];
             prettyUrls = true;
           };
         };
