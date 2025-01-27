@@ -14,16 +14,16 @@
 default-title = "untitled"
 
 # Template used to generate a note's filename, without extension.
-filename = "{{title}}"
+filename = "{{slug title}}"
 
 # The file extension used for the notes.
 extension = "md"
 
 # Template used to generate a note's content.
 # If not an absolute path, it is relative to .zk/templates/
-# template = "default.md"
-template = "note.md"
+# template = "note.md"
 # template = "lecture.md"
+# template = "topic.md"
 
 # Path globs ignored while indexing existing notes.
 #ignore = [
@@ -115,8 +115,8 @@ pager = "bat"
 
 # bat is a great tool to render Markdown document with syntax highlighting.
 #https://github.com/sharkdp/bat
-fzf-preview = "bat -p {-1}"
-
+# fzf-preview = "bat -p {-1}"
+fzf-preview = "zk list --quiet --format full --limit 1 {-1}"
 
 # LSP
 #
@@ -198,3 +198,6 @@ note = "zk edit --interactive Information"
 
 # Edit this configuration file.
 conf = '$EDITOR "$UNI_NOTES_DIR/.zk/config.toml"'
+
+# Edit templates
+template-conf = '$EDITOR "$UNI_NOTES_DIR/.zk/templates/."'

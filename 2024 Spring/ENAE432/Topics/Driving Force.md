@@ -7,7 +7,7 @@ page:
 title: Driving Force
 date: 2025.01.22
 time: 22:34:38-0500
-tags: Topics, ENAE432
+tags: [ Topic, ENAE432 ]
 ---
 
 Force driving system is due to fan:

@@ -7,7 +7,7 @@ page:
 title: Syllabus Info
 date: 2025.01.16
 time: 13:15:56-0500
-tags: Topics, PHYS499G
+tags: [ Topic, PHYS499G ]
 ---
 
 # Syllabus Info:
