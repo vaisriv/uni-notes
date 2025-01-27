@@ -14,7 +14,7 @@
 default-title = "untitled"
 
 # Template used to generate a note's filename, without extension.
-filename = "{{id}}"
+filename = "{{title}}"
 
 # The file extension used for the notes.
 extension = "md"
@@ -42,17 +42,17 @@ template = "note.md"
 #id-charset = "alphanum"
 
 # Length of the generated IDs.
-id-length = 8
+# id-length = 8
 
 # Letter case for the random IDs, among lower, upper or mixed.
-id-case = "lower"
+# id-case = "lower"
 
 
 # EXTRA VARIABLES
 #
 # A dictionary of variables you can use for any custom values when generating
 # new notes. They are accessible in templates with {{extra.<key>}}
-[extra]
+# [extra]
 
 #key = "value"
 
@@ -82,7 +82,7 @@ id-case = "lower"
 
 # Format used to generate links between notes.
 # Either "wiki", "markdown" or a custom template. Default is "markdown".
-link-format = "wiki"
+link-format = "[[{{filename}}]]"
 # Indicates whether a link's path will be percent-encoded.
 # Defaults to true for "markdown" format and false for "wiki" format.
 #link-encode-path = true
@@ -115,7 +115,7 @@ pager = "bat"
 
 # bat is a great tool to render Markdown document with syntax highlighting.
 #https://github.com/sharkdp/bat
-fzf-preview = "bat -p --color always {-1}"
+fzf-preview = "bat -p {-1}"
 
 
 # LSP
@@ -129,7 +129,7 @@ fzf-preview = "bat -p --color always {-1}"
 # Each diagnostic can have for value: none, hint, info, warning, error
 
 # Report titles of wiki-links as hints.
-#wiki-title = "hint"
+wiki-title = "hint"
 # Warn for dead links between notes.
 dead-link = "error"
 
