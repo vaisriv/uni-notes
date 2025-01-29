@@ -1,14 +1,10 @@
 ---
-# emanote
-page:
-    siteTitle: Convolution Integral
-
-# zk
 title: Convolution Integral
+tags: [ 24s, ENAE432, Topics ]
+
 date: 2025.01.29
 time: 09:56:59-0500
-tags: [ Topic, ENAE432 ]
 ---
 
-![TODO]
+> ![TODO]
 > Write this

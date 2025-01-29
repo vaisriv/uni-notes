@@ -1,13 +1,9 @@
 ---
-# emanote
-page:
-    siteTitle: Driving Force
-
-# zk
 title: Driving Force
+tags: [ 24s, ENAE432, Topics ]
+
 date: 2025.01.22
 time: 22:34:38-0500
-tags: [ Topic, ENAE432 ]
 ---
 
 Force driving system is due to fan:

@@ -1,5 +1,8 @@
-# ENAE380
+---
+title: ENAE 380
+tags: [ 24f , ENAE380 ]
+---
 
-## Flight Software Systems
+# Flight Software Systems
 
 Avionics using advanced sensor and computing technologies are at the heart of every modern Aerospace vehicle. Advanced software systems to improve cockpit safety and enable unmanned and deep-space missions. Object-oriented programming and software engineering concepts required to design and build complex flight software systems. Software validation, verification and real-time performance analysis to assess flight software system reliability and robustness. Human-machine interface design for piloted systems. Automatic onboard data acquisition and decision-making for unmanned air and space vehicles.
