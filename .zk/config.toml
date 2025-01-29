@@ -6,10 +6,11 @@ language = "en"
 filename = "{{slug title}}"
 extension = "md"
 
+# template = "lecture.md"
 template = "topic.md"
 
 # The default title used for new note, if no `--title` flag is provided.
-default-title = "untitled"
+default-title = "untitled-{{id}}"
 
 # MARKDOWN SETTINGS
 [format.markdown]
@@ -35,11 +36,12 @@ dead-link = "error"
 # COMMAND ALIASES
 [alias]
 # create new lecture or topic note for current course
-lecture = "zk new --template=\"lecture.md\" --title (echo \"Lecture\" (date +%Y.%m.%d)) $UNI_CURRENT_COURSE_NOTES_DIR/Lectures"
-topic = "zk edit $UNI_CURRENT_COURSE_NOTES_DIR/Topics --interactive"
+lecture = "zk new --template=\"lecture.md\" --title (echo \"Lecture\" (date +%Y-%m-%d)) $UNI_COURSE_NOTES_DIR/Lectures"
+lec-edit = "zk edit $UNI_COURSE_NOTES_DIR/Lectures --interactive"
+topic = "zk edit $UNI_COURSE_NOTES_DIR/Topics --interactive"
 
 # create new note without auto-course organization
-lecture-nc = "zk new --template=\"lecture.md\" --title (echo \"Lecture\" (date +%Y.%m.%d)) $argv"
+lecture-nc = "zk new --template=\"lecture.md\" --title (echo \"Lecture\" (date +%Y-%m-%d)) $argv"
 topic-nc = "zk edit --interactive"
 
 # edit config

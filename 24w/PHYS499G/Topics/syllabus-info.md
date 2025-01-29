@@ -10,8 +10,6 @@ time: 13:15:56-0500
 tags: [ Topic, PHYS499G ]
 ---
 
-# Syllabus Info:
-
 - Course Schedule:
     - Mondays, Wednesdays, and Fridays from 11:00 to 12:40
     - No class on 01/15 and 01/20

@@ -1,13 +1,13 @@
 ---
 # emanote
 page:
-    siteTitle: Lecture {{format-date now "%Y.%m.%d"}}
+    siteTitle: Lecture {{format-date now "%Y-%m-%d"}}
 
 # zk
-title: Lecture {{format-date now "%Y.%m.%d"}}
+title: Lecture {{format-date now "%Y-%m-%d"}}
 date: {{format-date now "%Y.%m.%d"}}
 time: {{format-date now "%H:%M:%S%z"}}
-tags: [ Lecture, {{env.UNI_CURRENT_COURSE}} ]
+tags: [ Lecture, COURSE ]
 ---
 
 {{content}}
