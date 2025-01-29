@@ -11,7 +11,7 @@ time: 13:15:56-0500
     - No class on 01/15 and 01/20
 - Textbook: Carroll, "Spacetime and Geometry"
 - Room: 1402
-- Weather: Any issues will be communicated at 0900 on the day of
+- Weather: Any issues will be communicated at 09:00 on the day of
 - Grading:
     - Assignments will be well explained, and any necessary clarification is available through email
     - Course is geared around learning
