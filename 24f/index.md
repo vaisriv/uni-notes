@@ -1,5 +1,5 @@
 ---
-title: 2024 Fall
+title: 2024-2025 Fall
 tags: [ 24f ]
 ---
 

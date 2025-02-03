@@ -1,5 +1,5 @@
 ---
-title: 2024 Winter
+title: 2024-2025 Winter
 tags: [ 24w ]
 ---
 
