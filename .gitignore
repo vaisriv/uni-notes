@@ -5,4 +5,8 @@
 # *.[oa]
 # *~
 
+# nix direnv dir
+.direnv
+
+# emanote build result
 _site
