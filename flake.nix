@@ -1,17 +1,13 @@
 {
 	inputs = {
-		# Emanote
-		emanote.url = "github:srid/emanote";
-		emanote.inputs.emanote-template.follows = "";
 		nixpkgs.follows = "emanote/nixpkgs";
 		flake-parts.follows = "emanote/flake-parts";
-		# emanote = {
-		# 	url = "github:srid/emanote";
-		# 	inputs.nixpkgs.follows = "nixpkgs";
-		# 	inputs.flake-parts.follows = "flake-parts";
-		#
-		# 	inputs.emanote-template.follows = "";
-		# };
+
+		# Emanote
+		emanote = {
+			url = "github:srid/emanote";
+			inputs.emanote-template.follows = "";
+		};
 
 		# Lix
 		lix-module = {
@@ -56,11 +52,11 @@
 				};
 				devShells.default =
 					pkgs.mkShell {
-						buildInputs = [
-							# pkgs.nixpkgs-fmt
+						packages = with pkgs; [
+							inputs.alejandra.defaultPackage.${system}
+							zk
 						];
 					};
-				formatter = inputs.${system}.alejandra.defaultPackage.${system};
 			};
 		};
 }
