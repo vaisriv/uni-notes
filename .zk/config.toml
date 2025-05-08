@@ -35,6 +35,7 @@ dead-link = "error"
 # COMMAND ALIASES
 [alias]
 # create new lecture or topic note for current course
+lec = "zk new --title (echo \"Lecture\" (date +%Y-%m-%d)) --template \"lecture.md\" $UNI_COURSE_NOTES_DIR/Lectures"
 lecture = "zk new --title (echo \"Lecture\" (date +%Y-%m-%d)) --template \"lecture.md\" $UNI_COURSE_NOTES_DIR/Lectures"
 lec-edit = "zk edit $UNI_COURSE_NOTES_DIR/Lectures --interactive"
 topic = "zk edit $UNI_COURSE_NOTES_DIR/Topics --interactive"
