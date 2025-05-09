@@ -7,7 +7,7 @@ page:
 template:
   theme: cyan
   baseUrl: "/"
-  iconUrl: "./_images/favicon.svg"
+  iconUrl: "./assets/umd.svg"
   sidebar:
     folders-first: true
 
