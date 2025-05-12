@@ -7,7 +7,7 @@ page:
 template:
   theme: cyan
   baseUrl: "/"
-  iconUrl: "./assets/umd.svg"
+  iconUrl: "./assets/emanote/umd.svg"
   sidebar:
     folders-first: true
 
