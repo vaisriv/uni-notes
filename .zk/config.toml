@@ -6,10 +6,9 @@ language = "en"
 filename = "{{slug title}}"
 extension = "md"
 
-template = "topics.md"
-
-# The default title used for new note, if no `--title` flag is provided.
+# defaults if no title or template is specified
 default-title = "untitled"
+template = "default.md"
 
 # MARKDOWN SETTINGS
 [format.markdown]

@@ -1,6 +1,6 @@
 ---
 title: Convolution Integral
-tags: [ 25s, ENAE432, Topics ]
+tags: [ 25s/ENAE432, Topics ]
 
 date: 2025.01.29
 time: 09:56:59-0500
