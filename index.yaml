@@ -7,8 +7,8 @@ page:
 template:
   theme: red
   name: "/assets/emanote/templates/layouts/default"
-  baseUrl: "/"
   iconUrl: "/assets/emanote/icons/umd-favicon.ico"
+  baseUrl: "/"
   base:
     bodyClass: bg-red-900 bg-opacity-65 overflow-y-scroll
   sidebar:

@@ -1,4 +1,4 @@
-<apply template="/templates/base">
+<apply template="/assets/emanote/templates/base">
   <bind tag="body-main">
     <div class="container mx-auto ">
       <main class="flex-col items-center justify-center mx-2">

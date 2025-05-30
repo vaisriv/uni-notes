@@ -1,4 +1,4 @@
-<apply template="/templates/filters/callout/_base">
+<apply template="/assets/emanote/templates/filters/callout/_base">
   <bind tag="color">#08BFBC</bind>
   <bind tag="icon">
     <path

@@ -1,4 +1,4 @@
-<apply template="/templates/special/base">
+<apply template="/assets/emanote/templates/special/base">
   <bind tag="special-main">
     <div class="w-full bg-gray-300">
       <div class="w-full px-3 py-1">
@@ -28,7 +28,7 @@
                   <task>
                     <div
                       class="bg-white py-1.5 px-2 my-1 rounded shadow border-2 hover:border-${theme}-600">
-                      <apply template="/templates/components/checkbox-unchecked">
+                      <apply template="/assets/emanote/templates/components/checkbox-unchecked">
                         <task:description>
                           <PandocLink class="text-gray-600">
                             <Internal class="font-bold hover:bg-gray-50" />

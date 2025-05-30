@@ -32,8 +32,8 @@
   <emaNoteFeedUrl />
   <tailwindCssShim />
 
-  <apply template="/templates/styles" />
-  <apply template="/templates/hooks/more-head" />
+  <apply template="/assets/emanote/templates/styles" />
+  <apply template="/assets/emanote/templates/hooks/more-head" />
 
   <head-main />
   <apply template="components/stork/stork-search-head" />

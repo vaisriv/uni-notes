@@ -6,6 +6,6 @@
     </a>
   </header>
   <div>
-    <apply template="/templates/components/pandoc" />
+    <apply template="/assets/emanote/templates/components/pandoc" />
   </div>
 </section>

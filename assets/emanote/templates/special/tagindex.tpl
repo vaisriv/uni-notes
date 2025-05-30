@@ -1,4 +1,4 @@
-<apply template="/templates/special/base">
+<apply template="/assets/emanote/templates/special/base">
   <bind tag="special-main">
     <div class="bg-gray-200 pb-2">
       <nav id="tagcrumbs" class="w-full pl-2 bg-gray-100">

@@ -18,6 +18,6 @@
       <apply template="backlinks" />
     </div>
     <apply template="metadata" />
-    <apply template="/templates/hooks/note-end" />
+    <apply template="/assets/emanote/templates/hooks/note-end" />
   </main>
 </div>

@@ -1,4 +1,4 @@
-<apply template="/templates/filters/callout/_base">
+<apply template="/assets/emanote/templates/filters/callout/_base">
   <bind tag="color">#086DD3</bind>
   <bind tag="icon">
     <circle cx="12" cy="12" r="10"></circle>

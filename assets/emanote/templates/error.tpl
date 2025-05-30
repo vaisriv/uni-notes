@@ -19,7 +19,7 @@
                 Your notebook has an issue.
               </div>
               <div class="bg-gray-50 p-2 my-4">
-                <apply template="/templates/components/pandoc" />
+                <apply template="/assets/emanote/templates/components/pandoc" />
               </div>
               <div class="flex items-center justify-center text-xl">
                 <div>Fix it (this page will reload), or <a class="font-bold underline" href="/">go

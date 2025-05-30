@@ -1,4 +1,4 @@
-<apply template="/templates/special/base">
+<apply template="/assets/emanote/templates/special/base">
   <bind tag="special-main">
     <div class="pt-1 pb-2 pl-4 bg-gray-200">
       <ema:route-tree>

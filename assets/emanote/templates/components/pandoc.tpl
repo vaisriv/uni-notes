@@ -26,12 +26,12 @@
   </Para>
   <Task:Checked>
     <!-- FIXME: Fix list styling to use flexbox, so task lists don't botch them up -->
-    <apply template="/templates/components/checkbox-checked">
+    <apply template="/assets/emanote/templates/components/checkbox-checked">
       <inlines />
     </apply>
   </Task:Checked>
   <Task:Unchecked>
-    <apply template="/templates/components/checkbox-unchecked">
+    <apply template="/assets/emanote/templates/components/checkbox-unchecked">
       <inlines />
     </apply>
   </Task:Unchecked>
