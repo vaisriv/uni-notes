@@ -6,9 +6,11 @@ page:
 
 template:
   theme: red
+  # name: "/assets/emanote/templates/layouts/default"
   baseUrl: "/"
-  iconUrl: "./assets/emanote/umd.svg"
+  iconUrl: "/assets/emanote/icons/umd-favicon.ico"
   sidebar:
+    # collapsed: false
     folders-first: true
 
 js:
