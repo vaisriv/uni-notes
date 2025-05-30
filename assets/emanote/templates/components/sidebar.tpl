@@ -10,6 +10,7 @@
           </path>
         </svg>
       </a>
+      <!-- Turn off Index View
       <a href="${ema:indexUrl}" title="Expand full tree">
         <svg style="width: 1rem;" class="hover:text-${theme}-700" fill="none" stroke="currentColor"
           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -18,6 +19,7 @@
           </path>
         </svg>
       </a>
+      -->
       <a title="Search (Ctrl+K)" class="cursor-pointer"
         onclick="window.emanote.stork.toggleSearch()">
         <apply template="stork/stork-icon" />

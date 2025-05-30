@@ -60,7 +60,7 @@
           <apply template="components/body" />
         </div>
       </ema:has:sidebar>
-      <apply template="components/footer" />
+      <!-- <apply template="components/footer" /> -->
     </div>
   </bind>
 </apply>

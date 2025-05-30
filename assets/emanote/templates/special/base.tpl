@@ -9,7 +9,7 @@
           <special-main />
         </div>
       </main>
-      <apply template="components/footer" />
+      <!-- <apply template="components/footer" /> -->
     </div>
   </bind>
 </apply>
