@@ -10,7 +10,7 @@ template:
   baseUrl: "/"
   iconUrl: "/assets/emanote/icons/umd-favicon.ico"
   base:
-    bodyClass: bg-gray-800 bg-opacity-15 overflow-y-scroll
+    bodyClass: bg-red-900 bg-opacity-65 overflow-y-scroll
   sidebar:
     # collapsed: false
     folders-first: true
