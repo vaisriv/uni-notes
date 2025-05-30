@@ -15,5 +15,5 @@ where $k_{m}$ constant, $V_{m}$ is voltage applied to motor
 Then:
 
 > [!NOTE]
-> $$\ddot{y} \left( t \right) = K u \left( t \right), K = \left[ \frac{K_{f}K_{m}}{m} \right]$$
+> $$\ddot{y} \left( t \right) = K u \left( t \right),\quad K = \left[ \frac{K_{f}K_{m}}{m} \right]$$
 > treating $V_{m}\left(t\right) = u\left(t\right)$ as the *input* to the system
