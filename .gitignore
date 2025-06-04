@@ -5,7 +5,7 @@
 # *.[oa]
 # *~
 
-# nix direnv dir
+# ignore nix direnv dir
 .direnv
 
 # emanote build result

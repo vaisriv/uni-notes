@@ -1,4 +1,6 @@
 {
+  description = "uni notes site flake";
+
   inputs = {
     nixpkgs.follows = "emanote/nixpkgs";
     flake-parts.follows = "emanote/flake-parts";
