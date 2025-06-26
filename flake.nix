@@ -1,49 +1,29 @@
 {
-  description = "uni notes site flake";
+    description = "uni notes flake";
 
-  inputs = {
-    nixpkgs.follows = "emanote/nixpkgs";
-    flake-parts.follows = "emanote/flake-parts";
+    inputs = {
+        # nixpkgs
+        nixpkgs.url = "github:nixos/nixpkgs";
+        # nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    # Emanote
-    emanote = {
-      url = "github:srid/emanote";
-      inputs.emanote-template.follows = "";
-    };
-  };
-
-  outputs = inputs @ {
-    self,
-    flake-parts,
-    nixpkgs,
-    ...
-  }:
-    flake-parts.lib.mkFlake {inherit inputs;} {
-      systems = nixpkgs.lib.systems.flakeExposed;
-      imports = [inputs.emanote.flakeModule];
-      perSystem = {
-        self',
-        pkgs,
-        system,
-        ...
-      }: {
-        emanote = {
-          sites."default" = {
-            layers = [
-              {
-                path = ./.;
-                pathString = ".";
-              }
-            ];
-            prettyUrls = true;
-          };
+        # flake tools (thanks numtide)
+        blueprint = {
+            url = "github:numtide/blueprint";
+            inputs.nixpkgs.follows = "nixpkgs";
         };
-        devShells.default = pkgs.mkShell {
-          packages = with pkgs; [
-            zk
-          ];
+        devshell = {
+            url = "github:numtide/devshell";
+            inputs.nixpkgs.follows = "nixpkgs";
         };
-        formatter = pkgs.alejandra;
-      };
+        treefmt-nix = {
+            url = "github:numtide/treefmt-nix";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
+
+    outputs = inputs:
+        inputs.blueprint {
+            inherit inputs;
+            prefix = "./.nix/";
+        };
 }
