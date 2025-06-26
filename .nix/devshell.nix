@@ -6,7 +6,7 @@
 perSystem.devshell.mkShell {
     name = "notes";
     motd = ''
-        {141}📝 notes{reset} development shell
+        {141}📝 uni-notes{reset} development shell
         $(type -p menu &>/dev/null && menu)
     '';
 
