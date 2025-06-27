@@ -1,8 +1,8 @@
 ---
-title: Uni Notes
+title: Vai's Uni Notes
 ---
 
-This site contains my notes from my studies as an Undergraduate Aerospace Engineering Major and Physics Minor at the [University of Maryland: College Park](https://umd.edu/).
+This site contains my notes from my studies as an Undergraduate Honors Aerospace Engineering Major at the [University of Maryland: College Park](https://umd.edu/).
 
 These notes are organized via a combination of a `Year/Class/Lecture <Date>` directory structure and the [Zettelkasten](https://zettelkasten.de/) Method. As such, all of the information contained within these notes can be accessed via either sidebar navigation or through the search functionality. I use the aforementioned directory structure to organize my notes, and the [zk](https://zk-org.github.io/zk/) command-line tool to interact with them on a daily basis.
 
