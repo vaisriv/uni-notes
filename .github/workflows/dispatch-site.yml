@@ -1,0 +1,22 @@
+name: Dispatch notes update to site repo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send dispatch to site repo
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.SITE_REPO_TOKEN }}
+          repository: vaisriv/uni.vaisriv.com
+          event-type: notes-updated
+          client-payload: |
+            {
+              "notes_sha": "${{ github.sha }}",
+              "notes_branch": "${{ github.ref_name }}"
+            }
