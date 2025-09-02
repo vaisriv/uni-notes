@@ -24,4 +24,4 @@ time: 09:41:54-0400
 
 - Reference: Planned Route = Spacecraft Trajectory
 - Tracking: GPS = Space Navigation (what most of this class is about)
-- Moving: Walking/Driving = [[25s/enae432 | ENAE 432 - Controls]]
+- Moving: Walking/Driving = [[25s/ENAE432 | ENAE 432 - Controls]]
