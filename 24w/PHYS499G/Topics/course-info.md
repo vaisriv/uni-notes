@@ -1,5 +1,5 @@
 ---
-title: Syllabus Info
+title: Course Information
 tags: [ 24w/PHYS499G, Topics ]
 
 date: 2025.01.16

@@ -1,6 +1,6 @@
 ---
 title: State Information
-tags: [ 25s/ENAE432, Topics ]
+tags: [ 25f/ENAE441, Topics ]
 
 date: 2025.09.02
 time: 10:03:21-0400

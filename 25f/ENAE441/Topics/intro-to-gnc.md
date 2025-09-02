@@ -1,15 +1,15 @@
 ---
-title: Intro to GNC
+title: Intro to G.N.C.
 tags: [ 25f/ENAE441, Topics ]
 
 date: 2025.09.02
 time: 09:41:54-0400
 ---
 
-## What is GNC?
+## What is G.N.C.?
 
 - Guidance, Navigation, and Control
-- GNC = Brains of spacecraft
+- G.N.C. = Brains of spacecraft
 - _or_ "Google Maps for Space"
 
 ## How do Maps work?
