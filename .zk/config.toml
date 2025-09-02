@@ -8,7 +8,7 @@ extension = "md"
 
 # defaults if no title or template is specified
 default-title = "untitled"
-template = "default.md"
+template = "topic.md"
 
 # MARKDOWN SETTINGS
 [format.markdown]
