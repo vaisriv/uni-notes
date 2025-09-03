@@ -1,0 +1,60 @@
+name: Send Submodule Updates to Parent Repo(s)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-site:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: vaisriv/uni.vaisriv.com
+          token: ${{ secrets.UNI_NOTES_UPDATE_PAT }}
+          submodules: true
+
+      - name: Pull & update submodules recursively
+        run: |
+          git submodule update --remote notes
+
+      - name: Commit
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add notes
+          git commit -m "chore(submodule): bump notes to ${{ github.sha }}" || echo "No changes to commit"
+          git push
+
+  update-mono:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: vaisriv/uni
+          token: ${{ secrets.UNI_NOTES_UPDATE_PAT }}
+          submodules: false
+          fetch-depth: 1
+
+      - name: Setup SSH for submodules
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.ACTIONS_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: Pull & update submodules recursively
+        run: |
+          git submodule init notes
+          git submodule update --remote notes
+
+      - name: Commit
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add notes
+          git commit -m "chore(submodule): bump notes to ${{ github.sha }}" || echo "No changes to commit"
+          git push
