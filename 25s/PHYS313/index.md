@@ -1,6 +1,6 @@
 ---
 title: PHYS 313
-tags: [ 25s/PHYS313 ]
+tags: [ 25s, PHYS313 ]
 ---
 
 # Electricity and Magnetism I

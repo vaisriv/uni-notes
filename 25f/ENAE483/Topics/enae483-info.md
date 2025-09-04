@@ -1,6 +1,6 @@
 ---
 title: Course Information
-tags: [ 25f/ENAE483, Topics ]
+tags: [ 25f, ENAE483, Topics ]
 
 date: 2025.09.02
 time: 11:05:24-0400

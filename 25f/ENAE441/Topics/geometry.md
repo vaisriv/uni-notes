@@ -1,6 +1,6 @@
 ---
 title: Geometry
-tags: [ 25f/ENAE441, Topics ]
+tags: [ 25f, ENAE441, Topics ]
 
 date: 2025.09.04
 time: 09:54:25-0400

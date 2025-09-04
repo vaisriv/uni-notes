@@ -1,6 +1,6 @@
 ---
 title: PHYS 499G
-tags: [ 24w/PHYS499G ]
+tags: [ 24w, PHYS499G ]
 ---
 
 # Special Problems in Physics; An Introduction to General Relativity for Undergraduates

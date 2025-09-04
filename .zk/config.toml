@@ -34,10 +34,10 @@ dead-link = "error"
 # COMMAND ALIASES
 [alias]
 # create new lecture or topic note for current course
-lec = "zk new --title (echo \"Lecture\" (date +%Y-%m-%d)) --template \"lecture.md\" $UNI_COURSE_NOTES_DIR/Lectures"
-lecture = "zk new --title (echo \"Lecture\" (date +%Y-%m-%d)) --template \"lecture.md\" $UNI_COURSE_NOTES_DIR/Lectures"
-lec-edit = "zk edit $UNI_COURSE_NOTES_DIR/Lectures --interactive"
-topic = "zk edit $UNI_COURSE_NOTES_DIR/Topics --interactive"
+lec = "zk new --title (echo \"Lecture\" (date +%Y-%m-%d)) --template \"lecture.md\" $UNI_NOTES_DIR/$UNI_SEM/$UNI_COURSE/Lectures"
+lecture = "zk new --title (echo \"Lecture\" (date +%Y-%m-%d)) --template \"lecture.md\" $UNI_NOTES_DIR/$UNI_SEM/$UNI_COURSE/Lectures"
+lec-edit = "zk edit $UNI_NOTES_DIR/$UNI_SEM/$UNI_COURSE/Lectures --interactive"
+topic = "zk edit $UNI_NOTES_DIR/$UNI_SEM/$UNI_COURSE/Topics --interactive"
 
 # edit config
 conf = '$EDITOR "$UNI_NOTES_DIR/.zk/config.toml"'

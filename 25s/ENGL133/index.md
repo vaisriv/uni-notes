@@ -1,6 +1,6 @@
 ---
 title: ENGL 133
-tags: [ 25s/ENGL133 ]
+tags: [ 25s, ENGL133 ]
 ---
 
 # Imagining Nature

@@ -1,6 +1,6 @@
 ---
 title: Intro to G.N.C.
-tags: [ 25f/ENAE441, Topics ]
+tags: [ 25f, ENAE441, Topics ]
 
 date: 2025.09.02
 time: 09:41:54-0400

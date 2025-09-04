@@ -1,6 +1,6 @@
 ---
 title: HISP 200
-tags: [ 24f/HISP200 ]
+tags: [ 24f, HISP200 ]
 ---
 
 # The Everyday and the American Environment

@@ -1,6 +1,6 @@
 ---
 title: Driving Force
-tags: [ 25s/ENAE432, Topics ]
+tags: [ 25s, ENAE432, Topics ]
 
 date: 2025.01.22
 time: 22:34:38-0500

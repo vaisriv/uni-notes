@@ -1,6 +1,6 @@
 ---
 title: Notation
-tags: [ 25f/ENAE423, Topics ]
+tags: [ 25f, ENAE423, Topics ]
 
 date: 2025.09.03
 time: 11:38:42-0400

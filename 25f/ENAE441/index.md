@@ -1,6 +1,6 @@
 ---
 title: ENAE 441
-tags: [ 25f/ENAE441 ]
+tags: [ 25f, ENAE441 ]
 ---
 
 # Space Navigation and Guidance

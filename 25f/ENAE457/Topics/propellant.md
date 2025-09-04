@@ -1,6 +1,6 @@
 ---
 title: Propellant
-tags: [ 25f/ENAE457, Topics ]
+tags: [ 25f, ENAE457, Topics ]
 
 date: 2025.09.03
 time: 16:06:21-0400

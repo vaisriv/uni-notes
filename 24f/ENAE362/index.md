@@ -1,6 +1,6 @@
 ---
 title: ENAE 362
-tags: [ 24f/ENAE362 ]
+tags: [ 24f, ENAE362 ]
 ---
 
 # Aerospace Instrumentation and Experimentation
