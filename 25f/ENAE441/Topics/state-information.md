@@ -30,6 +30,10 @@ time: 10:03:21-0400
   - $Y \to \fbox{Filter} \to X$
 - Orbit Determination:
   - Using state estimation to determine position & velocity (orbit) of an object in space
-  - $\text{range} = e$
-  - $\text{range rate} = \dot{e}$
-  - $\vec{Y} = \begin{bmatrix} e \\ \dot{e} \end{bmatrix} \quad \underrightarrow{\text{filters}} \quad \vec{X} = \begin{bmatrix} \vec{r} \\ \vec{v} \end{bmatrix} \quad \underrightarrow{\text{transform}} \quad \text{O.E.s} = \begin{bmatrix} \alpha \\ e \\ i \\ \omega \\ \Omega \\ \nu \end{bmatrix}$
+
+> [!NOTE]
+> ## State Estimation
+> - $\text{range} = e$
+> - $\text{range rate} = \dot{e}$
+> - $\vec{Y} = \begin{bmatrix} e \\ \dot{e} \end{bmatrix} \quad \underrightarrow{\text{filters}} \quad \vec{X} = \begin{bmatrix} \vec{r} \\ \vec{v} \end{bmatrix} \quad \underrightarrow{\text{transform}} \quad \text{O.E.s} = \begin{bmatrix} \alpha \\ e \\ i \\ \omega \\ \Omega \\ \nu \end{bmatrix}$
+> - $\vec{Y} = \begin{bmatrix} y_1 \\ y_2 \\ y_3 \end{bmatrix} \quad \underrightarrow{\text{Filters}} \quad \vec{X} = \begin{bmatrix} \vec{r} \\ \vec{v} \end{bmatrix} + \text{State Uncertainty}$
