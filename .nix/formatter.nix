@@ -25,4 +25,9 @@ inputs.treefmt-nix.lib.mkWrapper pkgs {
             tabWidth = 4;
         };
     };
+    settings.formatter.prettier = {
+        excludes = [
+            ".zk/templates/*"
+        ];
+    };
 }
