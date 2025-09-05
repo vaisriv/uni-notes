@@ -41,7 +41,7 @@ time: 09:44:04-0400
 ### Validating K2
 
 - Zoom in and geometrically compute area of small triangle
-    <!-- - TODO: image of forces with triangle small area -->
+      <!-- - TODO: image of forces with triangle small area -->
     - Area of triangle: $\frac{L W}{2}$
     - $L \approxeq |r|$
     - $W \approxeq |v|\sin{\theta} \, \mathrm{d}t$

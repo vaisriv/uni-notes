@@ -1,6 +1,6 @@
 ---
 title: Course Inforation
-tags: [ 25f, ENAE441, Topics ]
+tags: [25f, ENAE441, Topics]
 
 date: 2025.09.02
 time: 10:07:12-0400

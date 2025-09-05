@@ -1,6 +1,6 @@
 ---
 title: Course Information
-tags: [ 24w, PHYS499G, Topics ]
+tags: [24w, PHYS499G, Topics]
 
 date: 2025.01.16
 time: 13:15:56-0500

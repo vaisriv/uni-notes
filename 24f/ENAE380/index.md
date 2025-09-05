@@ -1,6 +1,6 @@
 ---
 title: ENAE 380
-tags: [ 24f, ENAE380 ]
+tags: [24f, ENAE380]
 ---
 
 # Flight Software Systems

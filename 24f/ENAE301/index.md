@@ -1,6 +1,6 @@
 ---
 title: ENAE 301
-tags: [ 24f, ENAE301 ]
+tags: [24f, ENAE301]
 ---
 
 # Dynamics of Aerospace Systems

@@ -1,6 +1,6 @@
 ---
 title: Momentum Conservation
-tags: [ 25f, ENAE457, Topics ]
+tags: [25f, ENAE457, Topics]
 
 date: 2025.09.03
 time: 16:07:57-0400
@@ -17,9 +17,13 @@ time: 16:07:57-0400
   $$
 
 > [!IMPORTANT]
+>
 > ## Thrust Equation
+>
 > - $M a = F = \dot{m} u_e$
 
 > [!IMPORTANT]
+>
 > ## Rocket Equation
+>
 > - $\Delta v = u_e \log(\frac{M_{1}}{M_{2}})$

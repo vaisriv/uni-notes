@@ -1,6 +1,6 @@
 ---
 title: ENAE 404
-tags: [ 25s, ENAE404 ]
+tags: [25s, ENAE404]
 ---
 
 # Space Flight Dynamics

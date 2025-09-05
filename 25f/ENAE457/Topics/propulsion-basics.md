@@ -1,6 +1,6 @@
 ---
 title: Propulsion Basics
-tags: [ 25f, ENAE457, Topics ]
+tags: [25f, ENAE457, Topics]
 
 date: 2025.09.03
 time: 16:03:20-0400

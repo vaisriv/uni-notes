@@ -1,6 +1,6 @@
 ---
 title: ENAE 457
-tags: [ 25f, ENAE457 ]
+tags: [25f, ENAE457]
 ---
 
 # Space Propulsion and Power

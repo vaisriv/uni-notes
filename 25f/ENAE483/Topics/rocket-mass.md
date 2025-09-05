@@ -1,18 +1,20 @@
 ---
 title: Rocket Mass
-tags: [ 25f, ENAE483, Topics ]
+tags: [25f, ENAE483, Topics]
 
 date: 2025.09.04
 time: 11:12:38-0400
 ---
 
 ### Notation
+
 - Initial Mass: $m_{\text{o}}$
 - Payload Mass: $m_{\text{pl}}$
 - Propellant Mass: $m_{\text{pr}}$
 - Inert Mass: $m_{\text{in}}$
 
 ### Relationships
+
 - Basic:
     - $$
         m_{\text{o}} = m_{\text{pl}} + m_{\text{pr}} + m_{\text{in}}

@@ -1,6 +1,6 @@
 ---
 title: Akin's Laws of Spacecraft Design
-tags: [ 25f, ENAE483, Topics ]
+tags: [25f, ENAE483, Topics]
 
 date: 2025.09.02
 time: 11:32:29-0400

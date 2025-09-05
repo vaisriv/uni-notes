@@ -1,6 +1,6 @@
 ---
 title: ENAE 432
-tags: [ 25s, ENAE432 ]
+tags: [25s, ENAE432]
 ---
 
 # Control of Aerospace Systems

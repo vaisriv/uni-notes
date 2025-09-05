@@ -1,6 +1,6 @@
 ---
 title: ENAE 483
-tags: [ 25f, ENAE483 ]
+tags: [25f, ENAE483]
 ---
 
 # Principles of Space Systems Design

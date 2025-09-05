@@ -1,6 +1,6 @@
 ---
 title: ENAE 311H
-tags: [ 24f, ENAE311H ]
+tags: [24f, ENAE311H]
 ---
 
 # Compressible Aerodynamics

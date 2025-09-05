@@ -1,6 +1,6 @@
 ---
 title: Intro to G.N.C.
-tags: [ 25f, ENAE441, Topics ]
+tags: [25f, ENAE441, Topics]
 
 date: 2025.09.02
 time: 09:41:54-0400
@@ -15,9 +15,9 @@ time: 09:41:54-0400
 ## How do Maps work?
 
 - Uses a series of steps:
-  1. Idenitify candidate routes (guidance)
-  2. Track current location (nav)
-  3. Change your location (control)
+    1. Idenitify candidate routes (guidance)
+    2. Track current location (nav)
+    3. Change your location (control)
 - Of course, this all happens in a loop, refining and reworking the current plan to optimize each step
 
 ## Terrestrial vs. Space

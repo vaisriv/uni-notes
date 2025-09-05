@@ -1,6 +1,6 @@
 ---
 title: ENRE 447
-tags: [ 25s, ENRE447 ]
+tags: [25s, ENRE447]
 ---
 
 # Fundamentals of Reliability Engineering

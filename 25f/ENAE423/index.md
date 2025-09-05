@@ -1,6 +1,6 @@
 ---
 title: ENAE 423
-tags: [ 25f, ENAE423 ]
+tags: [25f, ENAE423]
 ---
 
 # Vibration and Aeroelasticity
