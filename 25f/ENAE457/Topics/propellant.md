@@ -28,3 +28,11 @@ time: 16:06:21-0400
     - Specific Energy: $\epsilon$
     - $\dot{E} = \epsilon \dot{m}$
 - Thus: $\frac{1}{2} u_{e}^{2} = \eta \epsilon$
+
+## Density
+
+- Ideal Gas:
+    - $\rho_{P} = \frac{P}{RT} = \frac{P \overline{M}}{\overline{R} T}$
+- Two-Phase:
+    - $\rho_{P} = \fn{f}{T, \Chi}$, where $\Chi$ is quality
+    - $P = \fn{f}{T}$
