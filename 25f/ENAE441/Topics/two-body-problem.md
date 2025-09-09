@@ -6,7 +6,7 @@ date: 2025.09.04
 time: 09:44:04-0400
 ---
 
-<!-- - TODO: image of two body problem -->
+- ![Sketch of the Two Body Problem (from Dr. Martin's notes)](assets/2BP-sketch.png) 
 
 ## Kepler
 
@@ -19,8 +19,6 @@ time: 09:44:04-0400
     - $r \cos{\theta} = \frac{p}{1 + e \cos{\theta}}$
 
 ## Newton
-
-<!-- - TODO: image of two body problem with forces -->
 
 ### Creates Calculus
 
@@ -40,8 +38,7 @@ time: 09:44:04-0400
 
 ### Validating K2
 
-- Zoom in and geometrically compute area of small triangle
-      <!-- - TODO: image of forces with triangle small area -->
+- Using the triangle [[geometry#small-angle-approximation | small angle approximation]]:
     - Area of triangle: $\frac{L W}{2}$
     - $L \approxeq |r|$
     - $W \approxeq |v|\sin{\theta} \, \mathrm{d}t$
@@ -85,29 +82,127 @@ time: 09:44:04-0400
 3. Put $\fbox{1}$ and $\fbox{2}$ together
     - $$
         \begin{align*}
-            \frac{\mathrm{d}}{\mathrm{d}t}\left(??\right) &= ?? \\
+            \deriv{t}{\dot{\vec{r}} \times \vec{h}} &= \mu \deriv{t}{\frac{\vec{r}}{r}} \\
             \frac{\mathrm{d}}{\mathrm{d}t}\left(\dot{\vec{r}} \times \vec{h} - \mu \frac{\vec{r}}{r}\right) &= \vec{0}
         \end{align*}
       $$
 
-- What do we know about $\vec{B}$?
-    - Constant of motion
-    - In the plane of motion
-- What don't we know about $\vec{B}$?
+> [!NOTE] Quick sidebar for some questions
+> - What do we know about $\vec{B}$?
+>     - Constant of motion
+>     - In the plane of motion
+> - What don't we know about $\vec{B}$?
+> 
+>     - Where is it pointing?
+>     - Is there a meaningful geometric analog?
+> 
+> - Where is $\vec{B}$ wrt. $\vec{r}$?
+>     - $$
+>         \begin{align*}
+>             \vec{r} \cdot \vec{B} &= \vec{r} \cdot \left( \vec{v} \times \vec{h} - \mu \frac{\vec{r}}{r} \right)
+>         \end{align*}
+>       $$
+>     - $$
+>         \begin{align*}
+>             r |\vec{B}| \cos{\theta} &= \vec{r} \cdot \vec{v} \times \vec{h} - \mu \frac{\vec{r} \cdot \vec{r}}{r} \\
+>             \, &= \ldots \\
+>             r |\vec{B}| \cos{\theta} &= h^{2} + \mu r
+>         \end{align*}
+>       $$
+> 
+> - This gives:
+>     - $$
+>         r = \frac{\frac{h^{2}}{\mu}}{1 + \frac{|\vec{B}|}{\mu} \cos{\theta}}
+>       $$
+>     - Newton's "Calculus" thing might actually work!
 
-    - Where is it pointing?
-    - Is there a meaningful geometric analog?
-
-- Where is $\vec{B}$ wrt. $\vec{r}$?
+4. Compare physical quantities with geometric:
     - $$
-        \begin{align*}
-            \vec{r} \cdot \vec{B} &= \vec{r} \cdot \left( \vec{v} \times \vec{h} - \mu \frac{\vec{r}}{r} \right)
-        \end{align*}
+        p = \frac{h^{2}}{\mu} \checkmark
       $$
     - $$
+        e = \frac{|\vec{B}|}{\mu} \checkmark
+      $$
+
+5. Tie up loose ends by defining *eccentricity vector*:
+    - $$
+        \vec{e} = \frac{\vec{B}}{\mu} = \frac{\vec{v} \times \vec{h}}{\mu} - \frac{\vec{r}}{r} = e \hat{i}_{e}
+      $$
+    - Upon inspection of the [[geometry#ellipse | ellipse image]], $\vec{e}$ lies on the semi-major axis and points to periapsis
+    - Like with $\vec{h}$, we want to know about $\vec{e}$
+        - $$
+            \begin{align*}
+                E &= KE + U \\
+                \, &= \frac{1}{2} m v^{2} - \frac{GMm}{r} \\
+                \epsilon &= \frac{E}{m} = \frac{v^{2}}{2} - \frac{\mu}{r} \\
+                \, &= \ldots \\
+                \epsilon &= -\frac{\mu}{2a}
+            \end{align*}
+          $$
+
+### Using this information
+> [!IMPORTANT] Vis-Viva Equation
+> - $$
+>     \begin{align*}
+>         \frac{v^{2}}{2} - \frac{\mu}{r} =& -\frac{\mu}{2a} \\
+>         \, \implies& \boxed{v^{2} = \mu \left(\frac{2}{r} - \frac{1}{a}\right)}
+>     \end{align*}
+>   $$
+> - Means that if we know position on the elliptical orbit, we immediately know the velocity (and vice-versa)
+> - We can simplify beyond to only need $\theta$
+> - $$
+>     \begin{align*}
+>         v^{2} =& \mu \left(\frac{2}{\left(\frac{p}{1 + e \cos{\theta}}\right)} - \frac{1}{a}\right) \\
+>         \, =& \ldots \\
+>         \, \implies& \boxed{v = \frac{\mu}{h} \sqrt{1 + 2 e \cos{\theta} + e^{2}}}
+>     \end{align*}
+>   $$
+
+## Prediction
+### Motivation
+- Newton wasn't happy with being able to describe the motion, he wanted to predict the motion
+- Want: $\fn{r}{\theta}, \fn{v}{\theta} \to \fn{r}{t}, \fn{v}{t}$
+- This way, we can know where the planets ***will be*** at some $\Delta t$ in the future
+### Creating the prediction model
+- $$
+    \begin{align*}
+        h &= r \theta \\
+        \, &= \ldots \\
+        \intd{t_{0}}{t_{1}}{h}{t} &= \intd{\theta_{0}}{\theta_{1}}{\frac{p^{2}}{\left(1 + e \cos{\theta}\right)^{2}}}{\theta} \\
+        \intd{t_{0}}{t_{1}}{\sqrt{\frac{\mu}{p^{3}}}}{t} &= \intd{\theta_{0}}{\theta_{1}}{\frac{1}{\left(1 + e \cos{\theta}\right)^{2}}}{\theta}
+    \end{align*}
+  $$
+- Oh my! That doesn't look fun to integrate (especially if you just *invented calculus* and are the only one on the planet who knows integration)
+- Let's think:
+    - Question: Is there a more integration-friendly way to represent/model this motion?
+    - Answer: Yes! Let's use the [[geometry#eccentric-anomaly | eccentric anomaly]] of the ellipse
+- Let's rederive $\vec{h}$ using Eccentric Anomaly
+    - $$
         \begin{align*}
-            r B \cos{\theta} &= \vec{r} \cdot \vec{v} \times \vec{h} - \mu \frac{\vec{r} \cdot \vec{r}}{r} \\
+            \vec{r} &= x \hat{i}_{e} + y \hat{i}_{p} \\
+            \dot{\vec{r}} &= \dot{x} \hat{i}_{e} + \dot{y} \hat{i}_{p} \\
+            \vec{h} &= \vec{r} \times \dot{\vec{r}} \\
             \, &= \ldots \\
-            r B \cos{\theta} &= h^{2} + \mu r
+            \vec{h} &= \left(x \dot{y} - \dot{x} y\right) \hat{i}_{h} 
         \end{align*}
       $$
+    - $$
+        \begin{align*}
+            \fn{x}{E} &= a \left(\cos{E} - e\right) \\
+            \fn{y}{E} &= a \sqrt{1 - e^{2}} \sin{E} \\
+            \fn{\dot{x}}{E} &= -a \sin{E} \drv{E}{t} \\
+            \fn{\dot{y}}{E} &= a \sqrt{1 - e^{2}} \cos{E} \drv{E}{t}
+        \end{align*}
+      $$
+- Plug into $|\vec{h}|$
+
+> [!IMPORTANT] Kepler's Formula
+> - $$
+>     \begin{align*}
+>         \vec{h} =& \left(x \dot{y} - \dot{x} y\right) \hat{i}_{h} \\
+>         \, =& \ldots \\
+>         \sqrt{\frac{\mu}{a^{3}}} =& \left(1 - e \cos{E}\right) \drv{E}{t} \\
+>         \, =& \ldots \\
+>         \implies& \boxed{\sqrt{\frac{\mu}{a^{3}}}\left(t_{1}-t_{0}\right) = E - e \sin{E} \bigg\rbrack_{E_{0}}^{E_{1}}}
+>     \end{align*}
+>   $$
