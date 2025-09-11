@@ -32,7 +32,7 @@ time: 11:06:54-0400
 - $m \ddot{y_R} + c \dot{y_R} + k \dot{y_R} = -m \ddot{d}$
 - EoM: $F_{\text{applied}} = -m \ddot{d}$
 
-> [!NOTE] > **Initial Conditions at $t = 0$**
+> [!NOTE] **Initial Conditions at $t = 0$**
 >
 > - Can treat as given for all problems (unless otherwise specified)
 > - $y(0) = y_0$

@@ -26,4 +26,4 @@ time: 16:07:57-0400
 >
 > ## Rocket Equation
 >
-> - $\Delta v = u_e \log(\frac{M_{1}}{M_{2}})$
+> - $\Delta v = u_e \log{\frac{M_{1}}{M_{2}}}$
