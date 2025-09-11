@@ -14,7 +14,7 @@ time: 16:07:57-0400
     - $F = \dot{m} u_e$
 - For constant $F$: $I_{\text{total}} = F \Delta t$
 - For constant $u_e$: $I_{\text{total}} = u_e \int \dot{m} \mathrm{d}t = u_e M_p$
-    - $M_p$ is [[propellant#mass | propellant mass]]
+    - $M_p$ is [[propellant#mass|propellant mass]]
 
 ## Specific Impulse
 

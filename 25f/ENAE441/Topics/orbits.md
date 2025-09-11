@@ -8,4 +8,4 @@ time: 09:27:38-0400
 
 ## Types of Orbits
 
-- [[two-body-problem | Two Body Problem]]
+- [[two-body-problem|Two Body Problem]]

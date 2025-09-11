@@ -10,7 +10,7 @@ time: 09:44:04-0400
 
 ## Kepler
 
-1. Planet orbits follow an [[geometry#ellipse | Ellipse]]
+1. Planet orbits follow an [[geometry#ellipse|Ellipse]]
 2. Motion of planets carve out equal area in ellipses per unit time
     - $A_{1} = A_{2}$ for fixed $\Delta t$
 3. Period of motion is related to semi-major axis (SMA)
@@ -38,7 +38,7 @@ time: 09:44:04-0400
 
 ### Validating K2
 
-- Using the triangle [[geometry#small-angle-approximation | small angle approximation]]:
+- Using the triangle [[geometry#small-angle-approximation|small angle approximation]]:
     - Area of triangle: $\frac{L W}{2}$
     - $L \approxeq |r|$
     - $W \approxeq |v|\sin{\theta} \, \mathrm{d}t$
@@ -128,7 +128,7 @@ time: 09:44:04-0400
     - $$
         \vec{e} = \frac{\vec{B}}{\mu} = \frac{\vec{v} \times \vec{h}}{\mu} - \frac{\vec{r}}{r} = e \hat{i}_{e}
       $$
-    - Upon inspection of the [[geometry#ellipse | ellipse image]], $\vec{e}$ lies on the semi-major axis and points to periapsis
+    - Upon inspection of the [[geometry#ellipse|ellipse image]], $\vec{e}$ lies on the semi-major axis and points to periapsis
     - Like with $\vec{h}$, we want to know about $\vec{e}$
         - $$
             \begin{align*}
@@ -175,7 +175,7 @@ time: 09:44:04-0400
 - Oh my! That doesn't look fun to integrate (especially if you just *invented calculus* and are the only one on the planet who knows integration)
 - Let's think:
     - Question: Is there a more integration-friendly way to represent/model this motion?
-    - Answer: Yes! Let's use the [[geometry#eccentric-anomaly | eccentric anomaly]] of the ellipse
+    - Answer: Yes! Let's use the [[geometry#eccentric-anomaly|eccentric anomaly]] of the ellipse
 - Let's rederive $\vec{h}$ using Eccentric Anomaly
     - $$
         \begin{align*}
@@ -195,14 +195,13 @@ time: 09:44:04-0400
         \end{align*}
       $$
 - Plug into $|\vec{h}|$
-
-> [!IMPORTANT] Kepler's Formula
-> - $$
->     \begin{align*}
->         \vec{h} =& \left(x \dot{y} - \dot{x} y\right) \hat{i}_{h} \\
->         \, =& \ldots \\
->         \sqrt{\frac{\mu}{a^{3}}} =& \left(1 - e \cos{E}\right) \drv{E}{t} \\
->         \, =& \ldots \\
->         \implies& \boxed{\sqrt{\frac{\mu}{a^{3}}}\left(t_{1}-t_{0}\right) = E - e \sin{E} \bigg\rbrack_{E_{0}}^{E_{1}}}
->     \end{align*}
->   $$
+- This leads directly into [[keplers-equation|Kepler's Equation]]
+### Validating K3
+- $$
+    \begin{align*}
+        P &= 2 \pi \sqrt{\frac{a^{3}}{\mu}} \\
+        P^{2} &= 4 \pi^{2} \frac{a^{3}}{\mu} \\
+        P^{2} &= \frac{4 \pi^{2}}{\mu} a^{3} \\
+        \implies P^{2} &\propto a^{3} \text{ q.e.d}
+    \end{align*}
+  $$

@@ -69,4 +69,4 @@ time: 21:25:43-0400
 > - $$
 >       \frac{M_{L}}{M_{0, 1}} = \prod_{i=1}^{N}\left(\frac{\lambda_{i}}{1+\lambda_{i}}\right)
 >   $$
-> - Optimize through [[gradient-descent | gradient descent]]
+> - Optimize through [[gradient-descent|gradient descent]]

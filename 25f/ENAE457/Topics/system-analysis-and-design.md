@@ -6,7 +6,7 @@ date: 2025.09.08
 time: 20:14:02-0400
 ---
 
-How does [[energy-conservation#jet-power | jet power]] scale?
+How does [[energy-conservation#jet-power|jet power]] scale?
 
 ## Analysis of an existing system
 
@@ -70,7 +70,7 @@ How does [[energy-conservation#jet-power | jet power]] scale?
         - Tank: $V_{T} = \frac{4}{3} \pi R^{3}$ ($t \ll R$)
         - Material: $V_{M} = 4 \pi R^{2} t = \ldots = V_{T} \left(\frac{3 P}{2 \sigma_{y}}\right)$
     - Mass:
-        - [[propellant#density | Propellant Density]]: $\rho_{P}$
+        - [[propellant#density|Propellant Density]]: $\rho_{P}$
         - Material Density: $\rho_{M}$
     - $$
         \begin{align*}

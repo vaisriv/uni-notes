@@ -11,4 +11,4 @@ time: 16:03:20-0400
     - Generally needs 3 things
         1. Stored Energy or Power Source
         2. Method of Power Conversion
-        3. [[propellant | Propellant]] or reaction "particles" (matter or photons)
+        3. [[propellant|Propellant]] or reaction "particles" (matter or photons)

@@ -22,7 +22,7 @@ time: 16:06:21-0400
 
 ## Chemically
 
-- Start from [[energy-conservation#jet-power-equation | jet equation]]:
+- Start from [[energy-conservation#jet-power-equation|jet equation]]:
     - $P_{\text{jet}} = \frac{1}{2} \dot{m} u_{e}^{2} = \eta \dot{E}$
 - Note the specific energy of the fuel itself:
     - Specific Energy: $\epsilon$
