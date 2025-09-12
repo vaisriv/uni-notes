@@ -6,7 +6,7 @@ date: 2025.09.04
 time: 09:44:04-0400
 ---
 
-- ![Sketch of the Two Body Problem (from Dr. Martin's notes)](assets/2BP-sketch.png) 
+- ![Sketch of the Two Body Problem (from Dr. Martin's notes)](assets/2BP-sketch.png)
 
 ## Kepler
 
@@ -88,14 +88,15 @@ time: 09:44:04-0400
       $$
 
 > [!NOTE] Quick sidebar for some questions
+>
 > - What do we know about $\vec{B}$?
 >     - Constant of motion
 >     - In the plane of motion
 > - What don't we know about $\vec{B}$?
-> 
+>
 >     - Where is it pointing?
 >     - Is there a meaningful geometric analog?
-> 
+>
 > - Where is $\vec{B}$ wrt. $\vec{r}$?
 >     - $$
 >         \begin{align*}
@@ -109,7 +110,6 @@ time: 09:44:04-0400
 >             r |\vec{B}| \cos{\theta} &= h^{2} + \mu r
 >         \end{align*}
 >       $$
-> 
 > - This gives:
 >     - $$
 >         r = \frac{\frac{h^{2}}{\mu}}{1 + \frac{|\vec{B}|}{\mu} \cos{\theta}}
@@ -117,6 +117,7 @@ time: 09:44:04-0400
 >     - Newton's "Calculus" thing might actually work!
 
 4. Compare physical quantities with geometric:
+
     - $$
         p = \frac{h^{2}}{\mu} \checkmark
       $$
@@ -124,7 +125,7 @@ time: 09:44:04-0400
         e = \frac{|\vec{B}|}{\mu} \checkmark
       $$
 
-5. Tie up loose ends by defining *eccentricity vector*:
+5. Tie up loose ends by defining _eccentricity vector_:
     - $$
         \vec{e} = \frac{\vec{B}}{\mu} = \frac{\vec{v} \times \vec{h}}{\mu} - \frac{\vec{r}}{r} = e \hat{i}_{e}
       $$
@@ -141,7 +142,9 @@ time: 09:44:04-0400
           $$
 
 ### Using this information
+
 > [!IMPORTANT] Vis-Viva Equation
+>
 > - $$
 >     \begin{align*}
 >         \frac{v^{2}}{2} - \frac{\mu}{r} =& -\frac{\mu}{2a} \\
@@ -159,11 +162,15 @@ time: 09:44:04-0400
 >   $$
 
 ## Prediction
+
 ### Motivation
+
 - Newton wasn't happy with being able to describe the motion, he wanted to predict the motion
 - Want: $\fn{r}{\theta}, \fn{v}{\theta} \to \fn{r}{t}, \fn{v}{t}$
-- This way, we can know where the planets ***will be*** at some $\Delta t$ in the future
+- This way, we can know where the planets **_will be_** at some $\Delta t$ in the future
+
 ### Creating the prediction model
+
 - $$
     \begin{align*}
         h &= r \theta \\
@@ -172,7 +179,7 @@ time: 09:44:04-0400
         \intd{t_{0}}{t_{1}}{\sqrt{\frac{\mu}{p^{3}}}}{t} &= \intd{\theta_{0}}{\theta_{1}}{\frac{1}{\left(1 + e \cos{\theta}\right)^{2}}}{\theta}
     \end{align*}
   $$
-- Oh my! That doesn't look fun to integrate (especially if you just *invented calculus* and are the only one on the planet who knows integration)
+- Oh my! That doesn't look fun to integrate (especially if you just _invented calculus_ and are the only one on the planet who knows integration)
 - Let's think:
     - Question: Is there a more integration-friendly way to represent/model this motion?
     - Answer: Yes! Let's use the [[geometry#eccentric-anomaly|eccentric anomaly]] of the ellipse
@@ -183,7 +190,7 @@ time: 09:44:04-0400
             \dot{\vec{r}} &= \dot{x} \hat{i}_{e} + \dot{y} \hat{i}_{p} \\
             \vec{h} &= \vec{r} \times \dot{\vec{r}} \\
             \, &= \ldots \\
-            \vec{h} &= \left(x \dot{y} - \dot{x} y\right) \hat{i}_{h} 
+            \vec{h} &= \left(x \dot{y} - \dot{x} y\right) \hat{i}_{h}
         \end{align*}
       $$
     - $$
@@ -196,7 +203,9 @@ time: 09:44:04-0400
       $$
 - Plug into $|\vec{h}|$
 - This leads directly into [[keplers-equation|Kepler's Equation]]
+
 ### Validating K3
+
 - $$
     \begin{align*}
         P &= 2 \pi \sqrt{\frac{a^{3}}{\mu}} \\

@@ -7,6 +7,7 @@ time: 09:34:04-0400
 ---
 
 > [!IMPORTANT] Kepler's Equation
+>
 > - $$
 >     \begin{align*}
 >         \vec{h} =& \left(x \dot{y} - \dot{x} y\right) \hat{i}_{h} \\
@@ -20,14 +21,15 @@ time: 09:34:04-0400
 - What follows from Kepler's Equation?
 
 ## Period, Mean Angular Motion, Mean Anomaly
+
 - One full rotation, $E_{0} = 0 \to E_{f} = 2 \pi$, will take one period: $P$
     - $$
-        \begin{align*}
-            \sqrt{\frac{\mu}{a^{3}}} \Delta t &= E - e \sin{E} \bigg|_{E_{0}}^{E_{f}} \\
-            \sqrt{\frac{\mu}{a^{3}}} P &= E - e \sin{E} \bigg|_{E_{0} = 0}^{E_{f} = 2 \pi} \\
-            \sqrt{\frac{\mu}{a^{3}}} P &= 2 \pi
-        \end{align*}
-    $$
+          \begin{align*}
+              \sqrt{\frac{\mu}{a^{3}}} \Delta t &= E - e \sin{E} \bigg|_{E_{0}}^{E_{f}} \\
+              \sqrt{\frac{\mu}{a^{3}}} P &= E - e \sin{E} \bigg|_{E_{0} = 0}^{E_{f} = 2 \pi} \\
+              \sqrt{\frac{\mu}{a^{3}}} P &= 2 \pi
+          \end{align*}
+      $$
 - This can be used to [[two-body-problem#validating-k3|validate K3]]
 - Mean Angular Motion:
     - $$
@@ -47,6 +49,7 @@ time: 09:34:04-0400
       $$
 
 ## Reducing Kepler's Equation
+
 - $$
     \begin{align*}
         n \underbrace{\Delta t}_{\text{input}} &= \left(E_{1} - e \sin{E_{1}}\right) - \underbrace{\left(E_{0} - e \sin{E_{0}}\right)}_{\text{const. based on $\theta_{0}$}} \\
@@ -59,7 +62,9 @@ time: 09:34:04-0400
 - The reduced form is non-linear $\implies$ no analytic solution
 
 ### Solving the reduced form
+
 - Newton invents new math again (Numerical Methods)
+
 1. Create an error function:
     - $$
         \fn{f}{E} = M - \left(E - e \sin{E}\right)

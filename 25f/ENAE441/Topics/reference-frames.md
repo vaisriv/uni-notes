@@ -11,7 +11,8 @@ time: 10:28:53-0400
 - This is where reference frames come in
 
 ## Basics
-- ![Sketch of an arbitrary Reference Frame](assets/arbitrary-reference-frame.png) 
+
+- ![Sketch of an arbitrary Reference Frame](assets/arbitrary-reference-frame.png)
 - A Reference Frame is a set of basis vectors which we used to describe our problem
 - Imagine an arbitrary reference frame, $\mathcal{I}$:
     - $$
@@ -34,9 +35,11 @@ time: 10:28:53-0400
       $$
 
 ## Polar [[two-body-problem|2BP]]
-- ![Sketch of the Polar Reference Frame (from Dr. Martin's notes)](assets/polar-reference-frame.png) 
+
+- ![Sketch of the Polar Reference Frame (from Dr. Martin's notes)](assets/polar-reference-frame.png)
 
 ### Orbit Frame
+
 - $$
     \mathcal{O} = \left\{\hat{i}_{r}, \hat{i}_{\theta}, \hat{i}_{h} \right\}
   $$
@@ -51,6 +54,7 @@ time: 10:28:53-0400
       $$
 
 ### Perifocal Frame
+
 - Alternative to Orbit Frame
 - $$
     \mathcal{P} = \left\{\hat{i}_{e}, \hat{i}_{p}, \hat{i}_{h} \right\}
@@ -67,12 +71,15 @@ time: 10:28:53-0400
   $$
 
 ## Types of Reference Frames
+
 ### Non-Inertial
+
 - Rotating frame
 - Basis vectors are constantly changing
 - Example: Orbital Frame
 
 ### Inertial
+
 - Non-Rotational Frame
 - Basis vectors don't change
 - Example:
@@ -82,6 +89,7 @@ time: 10:28:53-0400
       $$
 
 ## Reference Frames for Earth
+
 - $$
     \begin{align*}
         \mathcal{E} &= \left\{\hat{e}_{1}, \hat{e}_{2}, \hat{e}_{3}\right\} \\

@@ -7,6 +7,7 @@ time: 18:29:05-0400
 ---
 
 ## Damped, Single DoF Motion
+
 - ![Free Vibration Sketch](assets/free-vib-1dof-sketch.png)
 - $$
     \begin{align*}
@@ -44,6 +45,7 @@ time: 18:29:05-0400
       $$
 
 > [!EXAMPLE]
+>
 > - ![Free Vibration Beam Example Sketch](assets/free-vib-1dof-beam-sketch.png)
 > - Knowns:
 >     - $$

@@ -12,7 +12,7 @@ time: 09:54:25-0400
 
 ### Directrix Property
 
-- ![directrix diagram on an ellipse (from WikiMedia)](assets/ellipse-directrix.svg) 
+- ![directrix diagram on an ellipse (from WikiMedia)](assets/ellipse-directrix.svg)
 
 - Directrix: $d$
 - Each of the two lines parallel to the minor axis, and the following distance from it:
@@ -30,7 +30,7 @@ time: 09:54:25-0400
 
 ### Eccentric Anomaly
 
-- ![eccentric anomaly of an ellipse drawing (from WikiMedia)](assets/eccentric-anomaly.svg) 
+- ![eccentric anomaly of an ellipse drawing (from WikiMedia)](assets/eccentric-anomaly.svg)
 - Eccentric Anomaly: $E$
 - Angle at the center of the ellipse between the periapsis and the s/c's current position
 - $$
@@ -41,7 +41,7 @@ time: 09:54:25-0400
 
 ### Small Angle Approximation
 
-- ![small angle approximation (from Dr. Martin's notes)](assets/small-angle-approximation.png) 
+- ![small angle approximation (from Dr. Martin's notes)](assets/small-angle-approximation.png)
 - Angle must be measured in radians
 - $$
     \sin{\theta} \approx \tan{\theta} \approx \theta
